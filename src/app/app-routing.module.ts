@@ -9,8 +9,13 @@ const routes: Routes = [
     component: ImgComponent
   },
   {
-    path: '',
+    path: 'gallery',
     component: GalleryComponent
+  },
+  {
+    path: '',
+    redirectTo: '/gallery',
+    pathMatch: 'full'
   }
 ];
 
