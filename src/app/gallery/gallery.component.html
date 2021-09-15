@@ -1,6 +1,6 @@
 <p></p>
-<div class="row">
-    <div class="btn-group btn-group-lg" role="group">
+<div>
+    <div class="btn-group" role="group">
         <button class="btn btn-primary" [class.active]="filterBy==='all'" (click)="filterBy='all'">All</button>
         <button class="btn btn-primary" [class.active]="filterBy==='boats'" (click)="filterBy='boats'">Boats</button>
         <button class="btn btn-primary" [class.active]="filterBy==='camping'"
@@ -10,7 +10,7 @@
     </div>
     <ul id="thumnailsList">
         <li *ngFor="let image of (visibleImages | imagefilter:filterBy)">
-            <img src="{{image.url}}" class="tn" width="200" height="160">
+            <img [routerLink]="['image-detail',image.id]" src="{{image.url}}" class="tn" width="200" height="160">
         </li>
     </ul>
 </div>

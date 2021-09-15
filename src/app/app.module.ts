@@ -8,6 +8,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { ImgComponent } from './img/img.component';
 import { ImageService } from './image-service.service';
 import { FilterPipe } from './filter.pipe';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,8 @@ import { FilterPipe } from './filter.pipe';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule
+
 
 
   ],

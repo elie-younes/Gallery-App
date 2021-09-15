@@ -1,1 +1,8 @@
-<p>img works!</p>
+<div class="container" style='text-align:center'>
+    <div [ngStyle]="{'background-image':'url('+ image.url +')'}" class="img-container img-fluid">
+
+    </div>
+    <p class="caption">
+        {{image.caption}}
+    </p>
+</div>
